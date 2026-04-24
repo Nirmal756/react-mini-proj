@@ -12,9 +12,10 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      
+          
       - name: Creating build
-        uses: docker compose up -d --build
+        run: |
+          docker compose up -d --build
 
       
 
