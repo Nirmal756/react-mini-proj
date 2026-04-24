@@ -1,0 +1,7 @@
+---
+services:
+  frontend:
+    build:
+    container_name: react-app
+    ports:
+      - "8080:80"   
