@@ -10,9 +10,11 @@ jobs:
     runs-on: [self-hosted, react-mini-runner]
 
     steps:
-      - name: 1. Checkout Repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
       
-      - name:      
+      - name: Creating build
+        uses: docker compose up -d --build
+
       
 
